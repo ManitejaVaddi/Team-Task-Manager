@@ -31,6 +31,11 @@ Open:
 http://localhost:3000
 ```
 
+## Live Demo
+
+Live URL: team-task-manager-production-8d6c.up.railway.app
+
+
 The first signup becomes an Admin automatically. Later signups can be Member or Admin for demo purposes.
 
 ## API Routes
