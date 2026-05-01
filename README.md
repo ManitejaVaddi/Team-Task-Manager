@@ -1,0 +1,74 @@
+# Team Task Manager
+
+A full-stack web app for creating projects, assigning tasks, tracking status, and managing role-based access for Admin and Member users.
+
+## Features
+
+- Signup and login with password hashing
+- Admin and Member roles
+- Project creation and project membership
+- Task creation, assignment, priority, due date, and status tracking
+- Dashboard with total, todo, in-progress, done, and overdue task counts
+- REST API backed by SQLite relationships
+- Railway-ready `npm start` deployment
+
+## Tech Stack
+
+- Node.js HTTP server
+- Built-in `node:sqlite` database
+- HTML, CSS, and JavaScript frontend
+- PBKDF2 password hashing and signed JWT-style auth tokens
+
+## Run Locally
+
+```bash
+npm start
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+The first signup becomes an Admin automatically. Later signups can be Member or Admin for demo purposes.
+
+## API Routes
+
+- `POST /api/auth/signup`
+- `POST /api/auth/login`
+- `GET /api/me`
+- `GET /api/users`
+- `GET /api/projects`
+- `POST /api/projects`
+- `GET /api/projects/:id`
+- `POST /api/projects/:id/members`
+- `GET /api/tasks`
+- `POST /api/tasks`
+- `PATCH /api/tasks/:id/status`
+- `GET /api/dashboard`
+
+## Railway Deployment
+
+1. Push this project to GitHub.
+2. Open Railway and create a new project from the GitHub repo.
+3. Add an environment variable:
+
+```text
+JWT_SECRET=use-a-long-random-secret
+```
+
+4. Railway should detect Node and run:
+
+```bash
+npm start
+```
+
+5. After deployment, open the generated Railway URL and create the first Admin account.
+
+## Submission Checklist
+
+- Live URL: add your Railway URL
+- GitHub repo: add your repository URL
+- README: included
+- Demo video: record signup, login, create project, add member, create task, update status, dashboard overview
