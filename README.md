@@ -25,13 +25,7 @@ A full-stack web app for creating projects, assigning tasks, tracking status, an
 npm start
 ```
 
-Open:
 
-```text
-http://localhost:3000
-```
-
-The first signup becomes an Admin automatically. Later signups can be Member or Admin for demo purposes.
 
 ## API Routes
 
@@ -48,27 +42,4 @@ The first signup becomes an Admin automatically. Later signups can be Member or 
 - `PATCH /api/tasks/:id/status`
 - `GET /api/dashboard`
 
-## Railway Deployment
 
-1. Push this project to GitHub.
-2. Open Railway and create a new project from the GitHub repo.
-3. Add an environment variable:
-
-```text
-JWT_SECRET=use-a-long-random-secret
-```
-
-4. Railway should detect Node and run:
-
-```bash
-npm start
-```
-
-5. After deployment, open the generated Railway URL and create the first Admin account.
-
-## Submission Checklist
-
-- Live URL: add your Railway URL
-- GitHub repo: add your repository URL
-- README: included
-- Demo video: record signup, login, create project, add member, create task, update status, dashboard overview
