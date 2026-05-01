@@ -25,7 +25,13 @@ A full-stack web app for creating projects, assigning tasks, tracking status, an
 npm start
 ```
 
+Open:
 
+```text
+http://localhost:3000
+```
+
+The first signup becomes an Admin automatically. Later signups can be Member or Admin for demo purposes.
 
 ## API Routes
 
