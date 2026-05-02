@@ -31,7 +31,7 @@ Open:
 http://localhost:3000
 ```
 
-## Live Demo
+## Live Demo (deploy)
 
 Live URL: team-task-manager-production-8d6c.up.railway.app
 
