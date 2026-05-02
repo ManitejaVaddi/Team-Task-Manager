@@ -22,6 +22,11 @@ A full-stack web app for creating projects, assigning tasks, tracking status, an
 ## Run Locally
 
 ```bash
+git clone https://github.com/ManitejaVaddi/Team-Task-Manager
+cd team-task-manager
+```
+
+```bash
 npm start
 ```
 
@@ -31,12 +36,23 @@ Open:
 http://localhost:3000
 ```
 
-## Live Demo (deploy)
+## Live Demo
 
-Live URL: team-task-manager-production-8d6c.up.railway.app
+Live URL: https://team-task-manager-production-8d6c.up.railway.app
 
+## Demo Notes
 
 The first signup becomes an Admin automatically. Later signups can be Member or Admin for demo purposes.
+
+Recommended demo flow:
+
+- Signup as Admin
+- Create a project
+- Signup or login as a Member
+- Add the Member to the project
+- Create and assign a task
+- Update task status
+- Check the dashboard
 
 ## API Routes
 
@@ -53,4 +69,17 @@ The first signup becomes an Admin automatically. Later signups can be Member or 
 - `PATCH /api/tasks/:id/status`
 - `GET /api/dashboard`
 
+## Deployment
+
+This app is deployed on Railway. The production server uses:
+
+```bash
+npm start
+```
+
+Required environment variable:
+
+```text
+JWT_SECRET=your-long-random-secret
+```
 
