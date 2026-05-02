@@ -1,6 +1,8 @@
 # Team Task Manager
 
-A full-stack web app for creating projects, assigning tasks, tracking status, and managing role-based access for Admin and Member users.
+The main purpose of this application is to manage projects, assign tasks to team members, and track progress in a structured way. Instead of using scattered communication tools, everything is handled in one centralized system.
+
+In this application, users can sign up and log in securely. Based on their role, they get different permissions. Admin users can create projects, add team members, and assign tasks, while members can view their assigned tasks and update their status.
 
 ## Features
 
